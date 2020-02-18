@@ -68,14 +68,20 @@ int					ft_strequ(char const *s1, char const *s2);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putnbr(int n);
 void				ft_putstr(const char *s);
+void				ft_free_array(char **array);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 void				ft_putendl(char const *s);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strjoin(char const *s1, char const *s2);
-int					ft_itoa(const char *str);
+char				*ft_itoa(int n);
 char				*ft_strrchr(const char *s, int c);
 char				*ft_strstr(const char *s1, const char *s2);
 char				*ft_strnstr(const char *s1, const char *s2, size_t n);
+int					ft_startwith(char *s1, char *s2);
+int					ft_abs(int n);
+int					ft_countwordsall(char const *str);
+size_t				ft_get_number_length(int n);
+int					ft_int_len(int n);
 
 #endif

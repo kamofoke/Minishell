@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 static size_t		ft_get_number_length(int n)
 {
 	size_t			i;

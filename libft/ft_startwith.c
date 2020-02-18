@@ -6,9 +6,11 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/12 16:19:10 by kamofoke          #+#    #+#             */
-/*   Updated: 2020/02/17 08:30:52 by kamofoke         ###   ########.fr       */
+/*   Updated: 2020/02/18 13:32:41 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int		ft_startwith(char *s1, char *s2)
 {
