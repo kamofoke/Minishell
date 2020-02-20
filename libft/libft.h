@@ -6,7 +6,7 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 16:46:50 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/18 09:42:06 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2020/02/20 12:29:08 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,13 @@
 # include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
+# include <fcntl.h>
 
-typedef struct		s_list
-{
-	void			*content;
-	size_t			content_size;
-	struct s_list	*next;
-}					t_list;
+# define BUFF_SIZE 32
 
+int					get_next_line(const int fd, char **line);
+char				**ft_strsplit(char const *s, char c);
+char				**ft_split(const char *str);
 int					ft_atoi(const char *str);
 char				ft_whitespace(char c);
 char				*ft_strtrim(char const *s);

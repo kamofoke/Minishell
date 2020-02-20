@@ -6,16 +6,16 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/18 13:14:22 by kamofoke          #+#    #+#             */
-/*   Updated: 2020/02/19 16:35:51 by kamofoke         ###   ########.fr       */
+/*   Updated: 2020/02/20 10:40:12 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
 
-static char	**reallocate_env(int new_size)
+static char		**reallocate_env(int new_size)
 {
-	char    **new_env;
-	int             i;
+	char	**new_env;
+	int		i;
 
 	i = -1;
 	new_env = (char**)malloc(sizeof(char*) * (new_size + 1));
@@ -29,7 +29,7 @@ static char	**reallocate_env(int new_size)
 	return (new_env);
 }
 
-static void	remove_envp(int var_pos)
+static void		remove_envp(int var_pos)
 {
 	int	i;
 	int	var_count;
@@ -48,7 +48,7 @@ static void	remove_envp(int var_pos)
 	g_envp = reallocate_env(var_count - 1);
 }
 
-int		ft_unsetenv(char **arg)
+int				ft_unsetenv(char **arg)
 {
 	int	i;
 	int	var_pos;

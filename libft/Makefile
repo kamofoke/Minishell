@@ -6,13 +6,15 @@
 #    By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/03 15:24:05 by bsibanyo          #+#    #+#              #
-#    Updated: 2019/06/18 15:16:17 by bsibanyo         ###   ########.fr        #
+#    Updated: 2020/02/20 12:08:56 by kamofoke         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
 FLAGS = -Wall -Werror -Wextra -c
+
+HEADER = libft.h
 
 SRCS = ./ft_isalnum.c ./ft_isascii.c ./ft_isprint.c ./ft_putchar.c ./ft_strncat.c\
 	   ./ft_strcpy.c ./ft_tolower.c ./ft_isalpha.c ./ft_strncmp.c ./ft_memcmp.c \
@@ -24,7 +26,8 @@ SRCS = ./ft_isalnum.c ./ft_isascii.c ./ft_isprint.c ./ft_putchar.c ./ft_strncat.
 	   ./ft_memmove.c ./ft_striteri.c ./ft_strmap.c ./ft_strequ.c ./ft_putnbr_fd.c\
 	   ./ft_putnbr.c ./ft_putstr.c ./ft_strmapi.c ./ft_strnequ.c ./ft_putendl.c\
 	   ./ft_strsub.c ./ft_strjoin.c ./ft_itoa.c ./ft_strrchr.c ./ft_strstr.c\
-	   ./ft_strnstr.c ./ft_strtrim.c ./ft_whitespace.c \
+	   ./ft_strnstr.c ./ft_strtrim.c ./ft_whitespace.c ./ft_startwith.c ./ft_abs.c \
+	   ./ft_freearray.c ./get_next_line.c ./ft_split.c ./ft_int_len.c \
 
 OBJS = $(SRCS:.c=.o)
 

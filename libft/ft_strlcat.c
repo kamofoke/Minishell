@@ -6,14 +6,14 @@
 /*   By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 13:46:25 by bsibanyo          #+#    #+#             */
-/*   Updated: 2019/06/21 20:04:09 by bsibanyo         ###   ########.fr       */
+/*   Updated: 2020/02/20 10:43:24 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include "stdio.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
+size_t		ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	unsigned int		i;
 	unsigned int		j;
@@ -34,13 +34,4 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		dst[i + j] = '\0';
 	}
 	return (i + ft_strlen(src));
-}
-
-int	main(int argc, char **argv)
-{
-	if (argc > 1)
-	{
-		printf("system:%zu\n", strlcat(argv[1], argv[2], strlen(argv[1])));
-		printf("ft_:%zu", ft_strlcat(argv[1], argv[2],ft_strlen(argv[1])));
-	}
 }

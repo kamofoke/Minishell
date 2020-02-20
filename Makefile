@@ -6,7 +6,7 @@
 #    By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/13 07:54:33 by kamofoke          #+#    #+#              #
-#    Updated: 2020/02/19 16:36:21 by kamofoke         ###   ########.fr        #
+#    Updated: 2020/02/20 12:31:39 by kamofoke         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,8 @@ NAME	= 	minishell
 
 FLAGS	=	gcc -Wall -Wextra -Werror
 
-SRC 	=	ft_functions.c ft_cd.c ft_unsetenv.c
+SRC 	=	ft_functions.c ft_cd.c ft_unsetenv.c ft_echo.c \
+		   	execute_cmd.c main.c ft_setenv.c
 
 OBJ 	=	$(SRC:.c=.o)
 

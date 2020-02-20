@@ -6,7 +6,7 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/17 08:25:35 by kamofoke          #+#    #+#             */
-/*   Updated: 2020/02/19 16:36:31 by kamofoke         ###   ########.fr       */
+/*   Updated: 2020/02/20 12:34:43 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,8 @@
 # include <sys/wait.h>
 # include "./libft/libft.h"
 
-char 	**g_envp;
+char	**g_envp;
+
 int		exec_bin(char **arg);
 int		len_of_envp(char **envp);
 int		ft_echo(char **arg);
