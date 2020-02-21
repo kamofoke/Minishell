@@ -6,7 +6,7 @@
 /*   By: kamofoke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/20 10:53:05 by kamofoke          #+#    #+#             */
-/*   Updated: 2020/02/20 11:24:17 by kamofoke         ###   ########.fr       */
+/*   Updated: 2020/02/21 10:38:03 by kamofoke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static int	exec_builtin(char **arg)
 		return (1);
 	else if (ft_strcmp(arg[0], "exit") == 0)
 	{
-		ft_putendl("LOL you suck, The program is exiting... 100%");
+		ft_putendl("The program is exiting... 100%");
 		return (0);
 	}
 	else if (ft_strcmp(arg[0], "cd") == 0)
