@@ -6,7 +6,7 @@
 #    By: bsibanyo <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/03 15:24:05 by bsibanyo          #+#    #+#              #
-#    Updated: 2020/02/20 12:08:56 by kamofoke         ###   ########.fr        #
+#    Updated: 2020/02/21 09:39:00 by kamofoke         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ SRCS = ./ft_isalnum.c ./ft_isascii.c ./ft_isprint.c ./ft_putchar.c ./ft_strncat.
 	   ./ft_putnbr.c ./ft_putstr.c ./ft_strmapi.c ./ft_strnequ.c ./ft_putendl.c\
 	   ./ft_strsub.c ./ft_strjoin.c ./ft_itoa.c ./ft_strrchr.c ./ft_strstr.c\
 	   ./ft_strnstr.c ./ft_strtrim.c ./ft_whitespace.c ./ft_startwith.c ./ft_abs.c \
-	   ./ft_freearray.c ./get_next_line.c ./ft_split.c ./ft_int_len.c \
+	   ./ft_freearray.c ./get_next_line.c ./ft_split.c ./ft_strsplit.c ./ft_int_len.c \
 
 OBJS = $(SRCS:.c=.o)
 
